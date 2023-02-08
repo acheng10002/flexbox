@@ -1,0 +1,25 @@
+.container {
+    border: 5px solid #ffcc5c;
+    display: flex;
+}
+/* with this part commented, only the search item will flex 
+and the others will have fixed width
+.container > div {
+    flex: 1;
+}
+*/
+/* .container > .search {
+    flex: 2;
+}
+*/
+
+.home, 
+.logout {
+    flex: 1;
+}
+
+/* won't work because the property above is more specific 
+than this one, so this one would be overwritten 
+.search {
+    flex: 2;
+} */
