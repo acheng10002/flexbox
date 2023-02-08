@@ -1,0 +1,27 @@
+.container {
+    border: 5px solid #ffcc5c;
+    display: flex;
+}
+ /* flex of 1 meaning home and logout will take up the same amount of space
+    and will grow and shrink with the size of the container 
+    default grow is 0, default shrink is 1, and default basis is auto */ 
+.home {
+/* 
+    flex: 1;
+
+    flex: 1 1 200px;
+
+*/ 
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 200px; 
+}
+  
+.logout {
+/*
+    flex: 10 1 200px;
+*/
+    flex-grow: 10;
+    flex-shrink: 1;
+    flex-basis: 200px;
+}
