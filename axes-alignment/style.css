@@ -1,0 +1,48 @@
+.container1 {
+    display: flex;
+    flex-direction: column; 
+}
+  
+/* this selector selects all divs inside of .flex-container */
+.container1 div {
+    background: peachpuff;
+    border: 4px solid brown;
+    height: 80px;
+/* tells the flex items to default to their given height, 
+    could have put a height on the parent .flex-container instead, or
+    use flex-grow: 1 instead of the shorthand */
+    flex: 1 1 auto;
+/* flex: 1; would make the divs collapse, even tho a height is defined
+    flex: 1 expands flex-basis to 0, so all flex-growing and flex-shrinking wouldm begin their
+    calculations from 0 */
+}
+
+.container2 {
+    border: 5px solid #ffcc5c;
+    display: flex;
+    flex-direction: row; 
+}
+
+.container2 > div {
+    padding: 10px;
+    text-align: center;
+    font-size: 2em;
+    color: #ffeead;
+}
+  
+html, body {
+    background-color: #ffeead;
+    margin: 10px;
+}
+  
+.container2 > div:nth-child(1) {
+    background-color: #96ceb4;	
+}
+  
+.container2 > div:nth-child(2) {
+    background-color: #ff6f69;
+}
+  
+.container2 > div:nth-child(3) {
+    background-color: #88d8b0;
+}
