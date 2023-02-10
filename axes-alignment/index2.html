@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style2.css">
+        <style>
+            form {
+              display: flex;
+              align-items: flex-end;
+              /* without flex-wrap: wrap, elements would shrink until they 
+              reach their min size and causes an overflow */
+              flex-wrap: wrap;
+              gap: 20px;
+            }
+            .name {
+              flex-grow: 1;
+              flex-basis: 120px;
+            }
+            /* prioritizing email to get the most of the extra space */
+            .email {
+              flex-grow: 3;
+              flex-basis: 170px;
+            }
+            button {
+              flex-grow: 1;
+              flex-basis: 70px;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <label class="name" for="name-field">
+                Name:
+                <input id="name-field"/>
+            </label>
+            <label class="email" for="email-field">
+                Email:
+                <input id="email-field" type="email"/>
+            </label>
+            <button>
+                Submit
+            </button>
+        </form>
+    </body>
+</html>

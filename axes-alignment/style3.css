@@ -1,0 +1,56 @@
+.nav1 ul {
+    display: flex;
+    justify-content: space-between;
+ /* or space-around, space-evenly, flex-start, flex-end, or center */
+}
+
+.nav2 ul {
+    display: flex;
+}
+  
+.nav2 li {
+    flex: 1 ;
+}
+
+.nav3 ul {
+    display: flex;
+    margin: 0 -10px;
+}
+  
+.nav3 li {
+    margin: 0 10px;
+}
+  
+.push-right {
+    margin-left: auto;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.box div {
+    border: 5px solid black;
+    width: 100px;
+    height: 100px;
+}
+
+.card {
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+}
+  
+.card .content {
+    flex: 1 1 auto;
+}
+
+.wrapper {
+    display: flex;
+}
+  
+.wrapper input[type="text"] {
+    flex: 1 1 auto;
+}
